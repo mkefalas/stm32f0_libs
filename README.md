@@ -14,3 +14,5 @@ For example, label F0_V1.9.0 goes to STM32Cube_FW_F0_V1.9.0
 The root directory of the repo can map to ...[STM32Cube]/Repository/
 so the complete path to the version would be 
    ...[STM32Cube]/Repository/STM32Cube_FW_F0_V1.9.0
+
+*Patches* go into STM32Cube_FW_F0/patches directory, and are applied relative to STM32Cube_FW_F0 .
