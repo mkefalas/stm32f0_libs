@@ -35,7 +35,7 @@
 
 @par Example Description
 
-This example describes how to configure and use GPIOs through the HAL API. 
+How to configure and use GPIOs through the HAL API 
 
 PB.03 IO (configured in output pushpull mode) toggles in a forever loop.
 On STM32F042K6-Nucleo(revC) board this IO is connected to LED3.

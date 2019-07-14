@@ -1,11 +1,11 @@
 /**
-  @page TIM_TimeBase Time Base example
+  @page TIM_TimeBase Timebase example
   
   @verbatim
   ******************** (C) COPYRIGHT 2016 STMicroelectronics *******************
   * @file    TIM/TIM_TimeBase/readme.txt 
   * @author  MCD Application Team
-  * @brief   Description of the TIM Time Base example
+  * @brief   Description of the TIM Timebase example
   ******************************************************************************
   *
   * Redistribution and use in source and binary forms, with or without modification,
@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example shows how to configure the TIM peripheral to generate a time base of 
-one seconde with the corresponding Interrupt request.
+Configuration of the TIM peripheral to generate a timebase of 
+one second with the corresponding interrupt request.
 
     In this example TIM2 input clock (TIM2CLK)  is set to APB1 clock (PCLK1),
     since APB1 prescaler is equal to 1.
@@ -67,7 +67,7 @@ In case of error, LED2 is turned ON.
       than the peripheral interrupt. Otherwise the caller ISR process will be blocked.
       To change the SysTick interrupt priority you have to use HAL_NVIC_SetPriority() function.
       
-@note The application need to ensure that the SysTick time base is always set to 1 millisecond
+@note The application need to ensure that the SysTick Timebase is always set to 1 millisecond
       to have correct HAL operation.
 
 @par Directory contents 
@@ -91,7 +91,7 @@ In case of error, LED2 is turned ON.
 
   - STM32F072RB-Nucleo RevC Set-up
     - Use LED2 connected to PA.05 pin and connect them on an oscilloscope 
-      to show the Time Base signal.  
+      to show the Timebase signal.  
 
 
 @par How to use it ? 

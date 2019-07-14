@@ -34,13 +34,11 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use a comparator peripheral
-to compare a voltage level applied on a GPIO pin
-versus the internal voltage reference (VrefInt),
-in interrupt mode; 
-This example is based on the STM32F0xx COMP LL API; 
-peripheral initialization done using LL initialization function
-to demonstrate LL init usage.
+
+How to use a comparator peripheral to compare a voltage level applied on a GPIO
+pin to the the internal voltage reference (VREFINT), in interrupt mode. This example
+is based on the STM32F0xx COMP LL API. The peripheral initialization
+uses the LL initialization function to demonstrate LL init usage.
 
 Example configuration:
 Comparator instance COMP1 is configured to compare:

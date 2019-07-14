@@ -35,8 +35,7 @@
 
 @par Example Description
 
-This example guides you through the different configuration steps by means of the 
-HAL API to perform periodic WWDG counter update and simulate a software fault that 
+Configuration of the HAL API to periodically update the WWDG counter and simulate a software fault that 
 generates an MCU WWDG reset when a predefined time period has elapsed.
 
 At the beginning of the main program the HAL_Init() function is called to reset 

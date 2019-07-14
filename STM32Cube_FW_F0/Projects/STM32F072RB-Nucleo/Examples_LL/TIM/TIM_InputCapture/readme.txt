@@ -35,12 +35,11 @@
 
 @par Example Description
 
-This example shows how to use the TIM peripheral to measure the frequency of
-a periodic signal provided either by an external signal generator or by
-another timer instance; 
-Example using the STM32F0xx TIM LL API, 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+Use of the TIM peripheral to measure a periodic signal frequency 
+provided either by an external signal generator or by 
+another timer instance. This example is based on the STM32F0xx TIM
+LL API. The peripheral initialization uses LL unitary service functions 
+for optimization purposes (performance and size).
   
 TIM1_CH1 is configured in input capture mode. The TIM1CLK frequency is set to 
 its maximum value (Prescaler is /2 * 2 = 1) in order to get the best possible resolution.

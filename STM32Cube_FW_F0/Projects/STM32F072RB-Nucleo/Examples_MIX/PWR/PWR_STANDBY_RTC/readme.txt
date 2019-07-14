@@ -35,9 +35,10 @@
 
 @par Example Description 
 
-This example shows how to enter the system in STANDBY mode and wake-up from this
-mode using external RESET or RTC Wake-up Timer through 
-the STM32F0xx RTC & RCC HAL & LL API (LL API used for performance improvement). 
+How to enter the Standby mode and wake up from this mode by using an external 
+reset or the RTC wakeup timer through the STM32F0xx RTC and RCC HAL, 
+and LL API (LL API use for maximizing performance).
+
 It allows to measure the current consumption in STANDBY mode with RTC enabled.
 
 In the associated software, the system clock is set to 48 MHz and the SysTick is 

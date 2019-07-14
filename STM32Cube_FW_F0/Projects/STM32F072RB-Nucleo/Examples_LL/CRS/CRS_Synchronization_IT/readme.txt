@@ -35,9 +35,9 @@
 
 @par Example Description
 
-This example describes how to configure Clock Recovery Service in IT mode through 
-the STM32F0xx CRS LL API. Peripheral initialization done using 
-LL unitary services functions for optimization purpose (performance and size).
+How to configure the clock recovery service in IT mode through the
+STM32F0xx CRS LL API. The peripheral initialization uses LL unitary
+service functions for optimization purposes (performance and size).
 
 At the beginning of the main program the SystemClock_Config() function is used to 
 configure the system clock (SYSCLK) to run at 48 MHz.

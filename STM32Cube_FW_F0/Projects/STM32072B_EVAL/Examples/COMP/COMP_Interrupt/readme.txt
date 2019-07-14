@@ -35,9 +35,10 @@
 
 @par Example Description 
 
-This example shows how to configure the COMP peripheral to compare the external
-voltage applied on a specific pin with the Internal Voltage Reference. When the 
-comparator input crosses (either rising or falling edges) the internal reference 
+How to use a comparator peripheral to compare a voltage level applied on a GPIO
+pin to the the internal voltage reference (VREFINT), in interrupt mode.
+
+When the comparator input crosses (either rising or falling edges) the internal reference 
 voltage VREFINT (1.22V), the comparator generates an interrupt.
 
 In this example, the comparator is connected on pin PA1. 

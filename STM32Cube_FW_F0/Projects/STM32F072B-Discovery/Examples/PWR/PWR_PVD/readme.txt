@@ -34,8 +34,9 @@
   @endverbatim
 
 @par Example Description 
-This example shows how to configure the programmable voltage detector using
-an external interrupt line. External DC supply has to be used to power Vdd.
+How to configure the programmable voltage detector by using an external interrupt 
+line. External DC supply must be used to supply Vdd.
+
 In this example, EXTI line 16 is configured to generate an interrupt on each rising 
 or falling edge of the PVD output signal (which indicates that the Vdd voltage is 
 moving below or above the PVD threshold). As long as the voltage is above the 

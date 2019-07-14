@@ -35,7 +35,7 @@
 
 @par Example Description 
 
-This example shows how to use the TIM peripheral to measure the frequency and 
+Use of the TIM peripheral to measure the frequency and 
 duty cycle of an external signal.
 
 The TIM3CLK frequency is set to SystemCoreClock (Hz), the Prescaler is 0 so the 

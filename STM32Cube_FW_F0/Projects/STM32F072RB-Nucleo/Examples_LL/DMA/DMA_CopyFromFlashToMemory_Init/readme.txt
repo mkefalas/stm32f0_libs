@@ -35,9 +35,9 @@
 
 @par Example Description
 
-This example describes how to use a DMA channel to transfer a word data buffer
-from Flash memory to embedded SRAM. Peripheral initialization done
-using LL initialization function to demonstrate LL init usage.
+How to use a DMA channel to transfer a word data buffer
+from Flash memory to embedded SRAM. The peripheral initialization uses LL
+initialization functions to demonstrate LL init usage.
 
 At the beginning of the main program the SystemClock_Config() function is used to configure the system
 clock (SYSCLK) to run at 48 MHz.

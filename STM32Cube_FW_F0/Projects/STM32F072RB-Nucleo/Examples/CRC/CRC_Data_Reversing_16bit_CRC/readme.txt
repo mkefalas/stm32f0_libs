@@ -35,12 +35,11 @@
 
 @par Example Description 
 
-This example guides you through the different configuration steps by means of the 
-HAL API. The CRC (Cyclic Redundancy Check) calculation unit computes a 16-bit long 
-CRC code derived from a buffer of 8-bit data (bytes).
-Input and output data reversal features are enabled.
-The user-defined generating polynomial is manually set to 0x1021 that is 
-X^16 + X^12 + X^5 + 1 which is the CRC-CCITT generating polynomial. 
+How to configure the CRC using the HAL API. The CRC (cyclic
+redundancy check) calculation unit computes a 16-bit CRC code derived from a
+buffer of 8-bit data (bytes). Input and output data reversal features are
+enabled. The user-defined generating polynomial is manually set to 0x1021,
+that is, X^16 + X^12 + X^5 + 1 which is the CRC-CCITT generating polynomial. 
 
 At the beginning of the main program, the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

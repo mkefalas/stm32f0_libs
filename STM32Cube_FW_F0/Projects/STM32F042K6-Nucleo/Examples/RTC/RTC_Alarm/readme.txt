@@ -35,8 +35,7 @@
 
 @par Example Description 
 
-This example guides you through the different configuration steps by means of the RTC 
-HAL API to configure and generate an RTC alarm.
+Configuration and generation of an RTC alarm using the RTC HAL API.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

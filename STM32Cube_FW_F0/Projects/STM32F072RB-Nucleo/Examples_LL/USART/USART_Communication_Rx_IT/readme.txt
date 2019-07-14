@@ -35,9 +35,9 @@
 
 @par Example Description
 
-This example shows how to configure GPIO and USART peripheral for receiving characters
-from HyperTerminal (PC) in Asynchronous mode using IT. Peripheral initialization done 
-using LL unitary services functions for optimization purpose (performance and size).
+Configuration of GPIO and USART peripherals to receive characters 
+from an HyperTerminal (PC) in Asynchronous mode using an interrupt. The peripheral initialization 
+uses LL unitary service functions for optimization purposes (performance and size).
 
 USART Peripheral is configured in asynchronous mode (115200 bauds, 8 data bit, 1 start bit, 1 stop bit, no parity).
 No HW flow control is used.

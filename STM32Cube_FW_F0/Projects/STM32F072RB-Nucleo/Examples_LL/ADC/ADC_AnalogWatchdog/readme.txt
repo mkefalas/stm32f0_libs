@@ -34,12 +34,13 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use a ADC peripheral with ADC analog watchdog
-to monitor a channel and detect when the corresponding conversion data is
-out of window thresholds; 
+
+How to use an ADC peripheral with an ADC analog watchdog to monitor a channel 
+and detect when the corresponding conversion data is outside the window 
+thresholds.
 This example is based on the STM32F0xx ADC LL API; 
 peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+for optimization purposes (performance and size).
 
 Example configuration:
 ADC is configured to convert a single channel, in continuous conversion mode,

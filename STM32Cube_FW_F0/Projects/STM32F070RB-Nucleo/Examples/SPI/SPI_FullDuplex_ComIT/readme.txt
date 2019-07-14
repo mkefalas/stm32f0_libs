@@ -34,8 +34,9 @@
   @endverbatim
 
 @par Example Description 
-This example shows how to ensure SPI Data buffer transmission and reception using 
-Interrupt. The communication is done with 2 boards through SPI.
+
+Data buffer transmission/reception between two boards via SPI using Interrupt mode.
+
    _________________________                       __________________________
   |       __________________|                      |__________________       |
   |      |SPI1              |                      |          SPI1    |      |

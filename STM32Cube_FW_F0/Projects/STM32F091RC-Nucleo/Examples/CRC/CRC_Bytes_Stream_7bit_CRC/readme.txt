@@ -35,11 +35,11 @@
 
 @par Example Description 
 
-This example guides you through the different configuration steps by means of the 
-HAL API. The CRC (Cyclic Redundancy Check) calculation unit computes 7-bit long 
-CRC codes derived from buffers of 8-bit data (bytes).
-The user-defined generating polynomial is manually set to 0x65 that is 
-X^7 + X^6 + X^5 + X^2 + 1, used in Train Communication Network, IEC 60870-5[17]. 
+How to configure the CRC using the HAL API. The CRC (cyclic
+redundancy check) calculation unit computes 7-bit CRC codes derived from buffers
+of 8-bit data (bytes). The user-defined generating polynomial is manually set
+to 0x65, that is, X^7 + X^6 + X^5 + X^2 + 1, as used in the Train Communication
+Network, IEC 60870-5[17].
 
 At the beginning of the main program, the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

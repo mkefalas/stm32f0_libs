@@ -35,8 +35,7 @@
 
 @par Example Description 
 
-This example provides a short description of how to use the DAC peripheral to 
-do a simple conversion.
+How to use the DAC peripheral to do a simple conversion.
 
 The result of conversion can be seen by connecting PA4(DAC channel1) to an oscilloscope.
 The observed value is 3.3V.

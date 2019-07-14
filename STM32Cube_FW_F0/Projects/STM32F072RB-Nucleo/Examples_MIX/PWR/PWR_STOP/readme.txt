@@ -35,9 +35,9 @@
 
 @par Example Description 
  
-This example shows how to enter the system in STOP with Low power regulator mode and wake-up from this
-mode using external RESET or wake-up interrupt (all the RCC functions calls use 
-RCC LL API for footprint and performance improvements).
+How to enter the system in STOP with Low power regulator mode and wake up from this mode by using external 
+reset or wakeup interrupt (all the RCC function calls use RCC LL API 
+for minimizing footprint and maximizing performance).
 
 In the associated software, the system clock is set to 48 MHz, an EXTI line
 is connected to the user button through PC.13 and configured to generate an 

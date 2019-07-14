@@ -34,11 +34,11 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use the DAC peripheral to generate
-a constant voltage signal; 
-This example is based on the STM32F0xx DAC LL API; 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+
+How to use the DAC peripheral to generate a constant voltage signal. This
+example is based on the STM32F0xx DAC LL API. The peripheral 
+initialization uses LL unitary service functions for optimization purposes
+(performance and size).
 
 Example configuration:
 One DAC channel (DAC1 channel1) is configured to connect DAC channel output on GPIO pin

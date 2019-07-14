@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example describes how to perform I2C data buffer transmission/reception 
-between two boards, via DMA.
+How to handle I2C data buffer transmission/reception between two boards, 
+via DMA.
 
 Board: STM32F072B-Discovery RevC (embeds a STM32F072RBT6 device)
 SCL Pin: PB6 (P2)

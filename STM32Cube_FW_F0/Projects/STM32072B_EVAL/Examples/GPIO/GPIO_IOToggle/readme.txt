@@ -35,7 +35,7 @@
 
 @par Example Description
 
-This example describes how to configure and use GPIOs through the HAL API. 
+How to configure and use GPIOs through the HAL API 
 
 PD.08, PD.09, PD.10 and PD.11 IOs (configured in output pushpull mode) toggle in a forever loop.
 On STM32072B-EVAL board these IOs are connected to LED1, LED2, LED3 and LED4.

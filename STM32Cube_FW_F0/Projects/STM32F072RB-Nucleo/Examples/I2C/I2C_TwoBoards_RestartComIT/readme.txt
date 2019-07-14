@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example describes how to perform a single I2C data buffer transmission/reception
-between two boards in Interrupt mode and with a restart condition.
+How to handle single I2C data buffer transmission/reception between two boards, 
+in interrupt mode and with restart condition.
 
 Board: STM32F072RB-Nucleo RevC (embeds a STM32F072RBT6 device)
 SCL Pin: PB6 (CN10 pin 17)

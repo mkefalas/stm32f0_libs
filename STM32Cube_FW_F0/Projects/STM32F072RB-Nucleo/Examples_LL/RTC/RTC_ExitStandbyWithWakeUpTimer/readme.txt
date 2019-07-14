@@ -35,9 +35,9 @@
 
 @par Example Description
 
-This example shows how to configure the RTC in order to wake up from Standby mode
-using RTC Wakeup Timer. Peripheral initialization is done using LL unitary services
-functions for optimization purpose (performance and size).
+Configuration of the RTC to wake up from Standby mode 
+using the RTC Wakeup timer. The peripheral initialization uses LL unitary service 
+functions for optimization purposes (performance and size).
   
 In this example, after start-up, SYSCLK is configured to the max frequency using
 the PLL with HSI48 as clock source.

@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example shows how to configure the system to measure the current consumption
-in different low power modes. 
+How to configure the system to measure the current consumption in different 
+low-power modes.
 
 The Low Power modes are:
   - SLEEP mode

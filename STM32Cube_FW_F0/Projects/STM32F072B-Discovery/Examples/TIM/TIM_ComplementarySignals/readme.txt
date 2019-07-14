@@ -35,9 +35,9 @@
 
 @par Example Description 
 
-This example shows how to configure the TIM1 peripheral to generate three 
-complementary TIM1 signals, to insert a defined dead time value, to use the break 
-feature and to lock the desired parameters.
+Configuration of the TIM1 peripheral to generate three 
+complementary signals, insert a predefined deadtime value, use the break 
+feature, and lock the break and dead-time configuration.
 
 TIM1CLK is fixed to SystemCoreClock, the TIM1 Prescaler is set to have
 TIM1 counter clock = 12MHz.

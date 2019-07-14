@@ -35,9 +35,9 @@
 
 @par Example Description
   
-This example describes how to transmit some data bytes from an I2C Master device
-using DMA mode to an I2C Slave device using DMA mode. Peripheral initialization done
-using LL unitary services functions for optimization purpose (performance and size).
+How to transmit data bytes from an I2C master device using DMA mode 
+to an I2C slave device using DMA mode. The peripheral is initialized 
+with LL unitary service functions to optimize for performance and size.
 
 This example guides you through the different configuration steps by mean of LL API
 to configure GPIO, DMA and I2C peripherals using two STM32F072RB-Nucleo RevC.

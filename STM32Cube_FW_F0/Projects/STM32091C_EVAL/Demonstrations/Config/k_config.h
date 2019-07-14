@@ -57,8 +57,8 @@
 /* Exported constants --------------------------------------------------------*/
 /* Exported macros -----------------------------------------------------------*/
 #define EVAL_BOARD   "STM32091C-EVAL"
-#define DEMO_VERSION "Version 1.5.0"
-#define DEMO_DATE    "29 - Janvier - 2016"   
+#define DEMO_VERSION "Version 1.10.0"
+#define DEMO_DATE    "27 - October - 2017"   
 
 #define DEMO_INFO1   "MCD Application Team"
 #define DEMO_INFO2   "COPYRIGHT 2016"   

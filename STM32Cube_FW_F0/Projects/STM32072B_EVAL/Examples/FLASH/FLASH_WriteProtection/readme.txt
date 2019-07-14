@@ -35,8 +35,8 @@
 
 @par Example Description
 
-This example describes how to configure and use the FLASH HAL API to enable and 
-disable the write protection of the internal Flash memory.
+How to configure and use the FLASH HAL API to enable and disable the write 
+protection of the internal Flash memory.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

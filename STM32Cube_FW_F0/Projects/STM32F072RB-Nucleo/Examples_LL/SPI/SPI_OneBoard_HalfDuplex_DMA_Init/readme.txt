@@ -35,9 +35,9 @@
 
 @par Example Description
 
-This example shows how to configure GPIO and SPI peripherals for transmitting 
-bytes from an SPI Master device to an SPI Slave device by using DMA mode through 
-the STM32F0xx SPI LL API. Peripheral initialization done using 
+Configuration of GPIO and SPI peripherals to transmit 
+bytes from an SPI Master device to an SPI Slave device in DMA mode. This example
+is based on the STM32F0xx SPI LL API. The peripheral initialization uses the 
 LL initialization function to demonstrate LL init usage.
 
 This example works with only one STM32F072RB-Nucleo RevC.

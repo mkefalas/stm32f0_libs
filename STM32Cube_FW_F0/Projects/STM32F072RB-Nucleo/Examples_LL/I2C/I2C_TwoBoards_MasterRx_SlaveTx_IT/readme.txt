@@ -35,10 +35,10 @@
 
 @par Example Description
   
-This example describes how to receive data byte from an I2C Slave device
-using IT mode to an I2C Master device using IT mode. Peripheral initialization done
-using LL unitary services functions for optimization purpose (performance and size).
-
+How to handle the reception of one data byte from an I2C slave device 
+by an I2C master device. Both devices operate in interrupt mode. The peripheral 
+is initialized with LL unitary service functions to optimize for performance 
+and size.
 
 This example guides you through the different configuration steps by mean of LL API
 to configure GPIO and I2C peripherals using two STM32F072RB-Nucleo RevC.

@@ -35,10 +35,10 @@
 
 @par Example Description
 
-This example describes how to configure and use GPIOs through the LL API to 
-toggles the available users LEDs on the board each 250 ms. Peripheral initialization 
-done using LL unitary services functions for optimization purpose (performance and size).
-
+How to configure and use GPIOs to toggle the on-board user LEDs 
+every 250 ms. This example is based on the STM32F0xx LL API. The peripheral 
+is initialized with LL unitary service functions to optimize 
+for performance and size.
 
 PA.05 IO (configured in output pushpull mode) toggles in a forever loop.
 On STM32F072RB-Nucleo RevC board this IO is connected to LED2.

@@ -35,9 +35,11 @@
 
 @par Example Description 
 
-This example describes how to customize the HAL time base using RTC wakeup instead 
-of Systick as main source of time base. The User push-button will be used 
-to Suspend or Resume tick increment. 
+How to customize HAL using RTC wakeup as main source of time base, 
+instead of Systick.
+
+The User push-button is used to suspend or resume tick increment. 
+
 Each time the button is pressed; an interrupt is generated (EXTI_Line4_15)
 and in the ISR the uwIncrementState is checked:
   1- If the uwIncrementState = 0: the tick increment is suspended by calling 

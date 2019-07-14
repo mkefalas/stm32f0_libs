@@ -35,8 +35,7 @@
 
 @par Example Description 
 
-This example shows how to configure the TIM peripheral in PWM (Pulse Width Modulation) 
-mode.
+Configuration of the TIM peripheral in PWM (pulse width modulation) mode.
 
 SystemCoreClock is set to 48 MHz for STM32F0xx Devices.
 

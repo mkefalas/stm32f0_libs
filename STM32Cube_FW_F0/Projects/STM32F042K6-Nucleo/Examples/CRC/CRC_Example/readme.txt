@@ -35,9 +35,9 @@
 
 @par Example Description 
 
-This example guides you through the different configuration steps by means of the 
-HAL API. The CRC (Cyclic Redundancy Check) calculation unit computes the CRC code 
-of a given buffer of 32-bit data words, using a fixed generator polynomial (0x4C11DB7).
+How to configure the CRC using the HAL API. The CRC (cyclic
+redundancy check) calculation unit computes the CRC code of a given buffer of
+32-bit data words, using a fixed generator polynomial (0x4C11DB7).
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

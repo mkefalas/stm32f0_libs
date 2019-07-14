@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example describes how to use the TSC to perform continuous acquisitions
-of two channels in interrupt mode.
+Use of he TSC to perform continuous acquisitions 
+of two channels in Interrupt mode.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

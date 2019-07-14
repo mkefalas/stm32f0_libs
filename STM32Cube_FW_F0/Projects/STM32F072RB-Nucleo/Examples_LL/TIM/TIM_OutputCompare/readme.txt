@@ -35,11 +35,10 @@
 
 @par Example Description
 
-This example shows how to configure the TIM peripheral to generate an output 
-waveform in different output compare modes;
-Example using the STM32F0xx TIM LL API, 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+Configuration of the TIM peripheral to generate an output 
+waveform in different output compare modes. This example is based on the 
+STM32F0xx TIM LL API. The peripheral initialization uses 
+LL unitary service functions for optimization purposes (performance and size).
 
 In this example TIM2 input clock (TIM2CLK) frequency is set to APB1 clock (PCLK1),
 since APB1 pre-scaler is equal to 1.

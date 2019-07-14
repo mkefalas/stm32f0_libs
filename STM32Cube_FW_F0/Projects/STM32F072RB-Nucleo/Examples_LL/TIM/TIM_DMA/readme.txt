@@ -35,11 +35,10 @@
 
 @par Example Description
 
-This example provides a description of how to use DMA with TIMER update request
-to transfer Data from memory to TIMER Capture Compare Register 3 (TIMx_CCR3); 
-Example using the STM32F0xx TIM LL API, 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+Use of the DMA with a timer update request 
+to transfer data from memory to Timer Capture Compare Register 3 (TIMx_CCR3). This 
+example is based on the STM32F0xx TIM LL API. The peripheral initialization 
+uses LL unitary service functions for optimization purposes (performance and size).
 
 The following configuration values are used in this example:
   - TIM1CLK = SystemClock

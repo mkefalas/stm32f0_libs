@@ -53,7 +53,12 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 uint8_t ubKeyNumber = 0x0;
-CAN_HandleTypeDef    CanHandle;
+CAN_HandleTypeDef     CanHandle;
+CAN_TxHeaderTypeDef   TxHeader;
+CAN_RxHeaderTypeDef   RxHeader;
+uint8_t               TxData[8];
+uint8_t               RxData[8];
+uint32_t              TxMailbox;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -94,15 +99,8 @@ int main(void)
   /* Configure Tamper push-button */
   BSP_PB_Init(BUTTON_TAMPER, BUTTON_MODE_GPIO);
 
-  /*##-1- Configure the CAN peripheral #######################################*/
+  /* Configure the CAN peripheral */
   CAN_Config();
-
-  /*##-2- Start the Reception process and enable reception interrupt #########*/
-  if (HAL_CAN_Receive_IT(&CanHandle, CAN_FIFO0) != HAL_OK)
-  {
-    /* Reception Error */
-    Error_Handler();
-  }
 
   /* Infinite loop */
   while (1)
@@ -118,13 +116,13 @@ int main(void)
         LED_Display(++ubKeyNumber);
         
         /* Set the data to be transmitted */
-        CanHandle.pTxMsg->Data[0] = ubKeyNumber;
-        CanHandle.pTxMsg->Data[1] = 0xAD;
+        TxData[0] = ubKeyNumber;
+        TxData[1] = 0xAD;
         
-        /*##-3- Start the Transmission process ###############################*/
-        if (HAL_CAN_Transmit(&CanHandle, 10) != HAL_OK)
+        /* Start the Transmission process */
+        if (HAL_CAN_AddTxMessage(&CanHandle, &TxHeader, TxData, &TxMailbox) != HAL_OK)
         {
-          /* Transmission Error */
+          /* Transmission request Error */
           Error_Handler();
         }
         HAL_Delay(10);
@@ -203,25 +201,21 @@ static void Error_Handler(void)
   */
 static void CAN_Config(void)
 {
-  CAN_FilterConfTypeDef  sFilterConfig;
-  static CanTxMsgTypeDef        TxMessage;
-  static CanRxMsgTypeDef        RxMessage;
+  CAN_FilterTypeDef  sFilterConfig;
 
   /*##-1- Configure the CAN peripheral #######################################*/
   CanHandle.Instance = CANx;
-  CanHandle.pTxMsg = &TxMessage;
-  CanHandle.pRxMsg = &RxMessage;
 
-  CanHandle.Init.TTCM = DISABLE;
-  CanHandle.Init.ABOM = DISABLE;
-  CanHandle.Init.AWUM = DISABLE;
-  CanHandle.Init.NART = DISABLE;
-  CanHandle.Init.RFLM = DISABLE;
-  CanHandle.Init.TXFP = DISABLE;
+  CanHandle.Init.TimeTriggeredMode = DISABLE;
+  CanHandle.Init.AutoBusOff = DISABLE;
+  CanHandle.Init.AutoWakeUp = DISABLE;
+  CanHandle.Init.AutoRetransmission = ENABLE;
+  CanHandle.Init.ReceiveFifoLocked = DISABLE;
+  CanHandle.Init.TransmitFifoPriority = DISABLE;
   CanHandle.Init.Mode = CAN_MODE_NORMAL;
-  CanHandle.Init.SJW = CAN_SJW_1TQ;
-  CanHandle.Init.BS1 = CAN_BS1_5TQ;
-  CanHandle.Init.BS2 = CAN_BS2_6TQ;
+  CanHandle.Init.SyncJumpWidth = CAN_SJW_1TQ;
+  CanHandle.Init.TimeSeg1 = CAN_BS1_5TQ;
+  CanHandle.Init.TimeSeg2 = CAN_BS2_6TQ;
   CanHandle.Init.Prescaler = 4;
 
   if (HAL_CAN_Init(&CanHandle) != HAL_OK)
@@ -231,16 +225,16 @@ static void CAN_Config(void)
   }
 
   /*##-2- Configure the CAN Filter ###########################################*/
-  sFilterConfig.FilterNumber = 0;
+  sFilterConfig.FilterBank = 0;
   sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
   sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
   sFilterConfig.FilterIdHigh = 0x0000;
   sFilterConfig.FilterIdLow = 0x0000;
   sFilterConfig.FilterMaskIdHigh = 0x0000;
   sFilterConfig.FilterMaskIdLow = 0x0000;
-  sFilterConfig.FilterFIFOAssignment = 0;
+  sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0;
   sFilterConfig.FilterActivation = ENABLE;
-  sFilterConfig.BankNumber = 14;
+  sFilterConfig.SlaveStartFilterBank = 14;
 
   if (HAL_CAN_ConfigFilter(&CanHandle, &sFilterConfig) != HAL_OK)
   {
@@ -248,12 +242,27 @@ static void CAN_Config(void)
     Error_Handler();
   }
 
-  /*##-3- Configure Transmission process #####################################*/
-  CanHandle.pTxMsg->StdId = 0x321;
-  CanHandle.pTxMsg->ExtId = 0x01;
-  CanHandle.pTxMsg->RTR = CAN_RTR_DATA;
-  CanHandle.pTxMsg->IDE = CAN_ID_STD;
-  CanHandle.pTxMsg->DLC = 2;
+  /*##-3- Start the CAN peripheral ###########################################*/
+  if (HAL_CAN_Start(&CanHandle) != HAL_OK)
+  {
+    /* Start Error */
+    Error_Handler();
+  }
+
+  /*##-4- Activate CAN RX notification #######################################*/
+  if (HAL_CAN_ActivateNotification(&CanHandle, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK)
+  {
+    /* Notification Error */
+    Error_Handler();
+  }
+  
+  /*##-5- Configure Transmission process #####################################*/
+  TxHeader.StdId = 0x321;
+  TxHeader.ExtId = 0x01;
+  TxHeader.RTR = CAN_RTR_DATA;
+  TxHeader.IDE = CAN_ID_STD;
+  TxHeader.DLC = 2;
+  TxHeader.TransmitGlobalTime = DISABLE;
 }
 
 /**
@@ -262,19 +271,26 @@ static void CAN_Config(void)
   *         the configuration information for the specified CAN.
   * @retval None
   */
-void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *CanHandle)
+/**
+  * @brief  Rx Fifo 0 message pending callback
+  * @param  hcan: pointer to a CAN_HandleTypeDef structure that contains
+  *         the configuration information for the specified CAN.
+  * @retval None
+  */
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
-  if ((CanHandle->pRxMsg->StdId == 0x321) && (CanHandle->pRxMsg->IDE == CAN_ID_STD) && (CanHandle->pRxMsg->DLC == 2))
-  {
-    LED_Display(CanHandle->pRxMsg->Data[0]);
-    ubKeyNumber = CanHandle->pRxMsg->Data[0];
-  }
-
-  /* Receive */
-  if (HAL_CAN_Receive_IT(CanHandle, CAN_FIFO0) != HAL_OK)
+  /* Get RX message */
+  if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData) != HAL_OK)
   {
     /* Reception Error */
     Error_Handler();
+  }
+
+  /* Display LEDx */
+  if ((RxHeader.StdId == 0x321) && (RxHeader.IDE == CAN_ID_STD) && (RxHeader.DLC == 2))
+  {
+    LED_Display(RxData[0]);
+    ubKeyNumber = RxData[0];
   }
 }
 

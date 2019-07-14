@@ -35,7 +35,7 @@
 
 @par Example Description
 
-This example describes how to configure and use GPIOs through the HAL API. 
+How to configure and use GPIOs through the HAL API 
 
 PC.06, PC.08, PC.09 and PC.07 IOs (configured in output pushpull mode) toggle in a forever loop.
 On STM32F072B-Discovery RevC board these IOs are connected to LED3, LED4, LED5 and LED6.

@@ -35,7 +35,9 @@
 
 @par Example Description 
 
-This example shows how to make an analog watchdog using the COMP peripherals in window mode.
+How to use a pair of comparator peripherals to compare a voltage level applied on
+a GPIO pin to two thresholds: the internal voltage reference (VREFINT) and a fraction
+of the internal voltage reference (VREFINT/4), in interrupt mode.
 
   - The upper threshold is set to VREFINT = 1.22V
   - The lower threshold is set to VREFINT / 4 = 1.22V / 4 = 0.305V

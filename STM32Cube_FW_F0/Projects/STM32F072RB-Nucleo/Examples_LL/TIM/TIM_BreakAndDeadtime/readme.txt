@@ -35,14 +35,13 @@
 
 @par Example Description
 
-This example shows how to configure the TIMER to perform the following:
-  – generate three center-aligned PWM and complementary PWM signals
-  – insert a defined dead time value
-  – use the break feature
-  – lock the desired parameters
-This example is based on the STM32F0xx TIM LL API;
-peripheral initialization is done using LL unitary services
-functions for optimization purpose (performance and size).
+Configuration of the TIM peripheral to
+ three center-aligned PWM and complementary PWM signals,
+ insert a defined deadtime value,
+ use the break feature,
+ and lock the break and dead-time configuration.
+This example is based on the STM32F0xx TIM LL API.The peripheral initialization
+uses LL unitary services functions for optimization purposes (performance and size).
 
 TIM1CLK is fixed to 48 MHz, the TIM1 Prescaler is set to have
 TIM1 counter clock = 10 MHz.

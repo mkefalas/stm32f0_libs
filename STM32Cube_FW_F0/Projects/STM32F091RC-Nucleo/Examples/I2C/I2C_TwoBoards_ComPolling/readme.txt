@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example describes how to perform I2C data buffer transmission/reception between 
-two boards in Polling mode.
+How to handle I2C data buffer transmission/reception between two boards, 
+in polling mode.
 
 Board: STM32F091RC-Nucleo RevC (embeds a STM32F091RCT6 device)
 SCL Pin: PB6 (CN10, pin17)

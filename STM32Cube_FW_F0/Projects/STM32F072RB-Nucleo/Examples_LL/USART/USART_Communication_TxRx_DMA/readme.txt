@@ -35,11 +35,10 @@
 
 @par Example Description
 
-This example shows how to configure GPIO and USART peripheral
-to send characters asynchronously to/from an HyperTerminal (PC) in DMA mode;
-This example is based on STM32F0xx USART LL API; 
-Peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+Configuration of GPIO and USART peripherals 
+to send characters asynchronously to/from an HyperTerminal (PC) in DMA mode. 
+This example is based on STM32F0xx USART LL API. The peripheral 
+initialization uses LL unitary service functions for optimization purposes (performance and size).
 
 USART Peripheral is configured in asynchronous mode (115200 bauds, 8 data bit, 1 start bit, 1 stop bit, no parity).
 No HW flow control is used.

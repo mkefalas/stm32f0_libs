@@ -35,12 +35,10 @@
 
 @par Example Description 
 
-This example provides a short description of how to use the ADC peripheral
-with sequencer to convert several channels.
-Channels converted are one external channel and two internal channels
-(temperature sensor and VrefInt).
+How to use the ADC peripheral with a sequencer to convert several channels. 
+The channels converted are, in order, one external channel and two internal 
+channels (VrefInt and temperature sensors).
 Next, voltages and temperature are computed.
-
 
 WAVEFORM_VOLTAGE_GENERATION_FOR_TEST compilation switch (located in main.h) is  
 available to generate a waveform voltage for the test :

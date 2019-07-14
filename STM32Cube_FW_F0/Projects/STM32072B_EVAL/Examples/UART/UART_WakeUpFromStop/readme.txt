@@ -35,7 +35,7 @@
 
 @par Example Description 
 
-This example shows how to configure an UART to wake up the MCU from STOP mode
+Configuration of an UART to wake up the MCU from STOP mode
 when a given stimulus is received.
 
 Board: STM32072B-EVAL (embeds a STM32F072VB device)

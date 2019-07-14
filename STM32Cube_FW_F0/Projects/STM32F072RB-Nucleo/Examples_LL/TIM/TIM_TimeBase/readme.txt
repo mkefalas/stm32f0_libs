@@ -35,10 +35,9 @@
 
 @par Example Description
 
-This example shows how to configure the TIM peripheral to generate a time base; 
-Example using the STM32F0xx TIM LL API, 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+Configuration of the TIM peripheral to generate a timebase. This 
+example using the STM32F0xx TIM LL API.The peripheral initialization
+uses LL unitary services functions for optimization purposes (performance and size).
 
 In this example TIM2 input clock (TIM2CLK)  is set to APB1 clock (PCLK1),
 since APB1 prescaler is equal to 1.
@@ -52,21 +51,21 @@ PSC = (SystemCoreClock /10 KHz) - 1
 
 SystemCoreClock is set to 48 MHz for STM32F0xx Devices.
 
-The auto-reload (ARR) is calculated to get a time base period of 100ms,
-meaning that initial time base frequency is 10 Hz.
-ARR = (TIM2 counter clock / time base frequency) - 1
+The auto-reload (ARR) is calculated to get a timebase period of 100ms,
+meaning that initial timebase frequency is 10 Hz.
+ARR = (TIM2 counter clock / timebase frequency) - 1
 ARR = (TIM2 counter clock / 10) - 1
 
 Update interrupts are enabled. Within the update interrupt service routine pin PA.05
 (connected to LED2 on board STM32F072RB-Nucleo RevC) is toggled.
 
-User push-button can be used to modify the time base period from 100 ms
+User push-button can be used to modify the timebase period from 100 ms
 to 1 s in 100 ms steps. To do so, every time User push-button is pressed, the
 autoreload register (ARR) is updated. In up-counting update event is generated 
 at each counter overflow (when the counter reaches the auto-reload value). 
 
-Finally the time base frequency is calculated as follows:
-time base frequency = TIM2 counter clock /((PSC + 1)*(ARR + 1)*(RCR + 1))
+Finally the timebase frequency is calculated as follows:
+timebase frequency = TIM2 counter clock /((PSC + 1)*(ARR + 1)*(RCR + 1))
 
 @par Directory contents 
 

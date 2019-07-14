@@ -35,8 +35,7 @@
 
 @par Example Description 
 
-This example describes how to use the RCC HAL API to configure Clock Recovery Service in 
-using polling mode.
+Configuration of the clock recovery service (CRS) in Polling mode, using the RCC HAL API.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

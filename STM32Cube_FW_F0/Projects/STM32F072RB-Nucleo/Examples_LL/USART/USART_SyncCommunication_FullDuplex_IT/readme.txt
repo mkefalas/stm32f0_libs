@@ -35,11 +35,10 @@
 
 @par Example Description
 
-This example shows how to configure GPIO, USART, DMA and SPI peripherals for transmitting
-bytes from/to an USART peripheral to/from an SPI peripheral (in slave mode) by using IT mode
-through the STM32F0xx USART LL API (SPI is using DMA for 
-receving/transmitting characters sent from/received by USART). Peripheral initialization
-done using LL unitary services functions for optimization purpose (performance and size).
+Configuration of GPIO, USART, DMA and SPI peripherals to transmit 
+bytes between a USART and an SPI (in slave mode) in Interrupt mode. This example is based on the STM32F0xx USART LL API 
+(the SPI uses the DMA to receive/transmit characters sent from/received by the USART). The peripheral 
+initialization uses LL unitary service functions for optimization purposes (performance and size).
 
 This example works with only one STM32F072RB-Nucleo RevC.
 

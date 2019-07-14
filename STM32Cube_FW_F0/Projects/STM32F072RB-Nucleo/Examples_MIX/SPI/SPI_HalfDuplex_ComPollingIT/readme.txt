@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example shows how to ensure SPI data buffer transmission/reception between 
-two boards by using Polling (LL Driver) an interrupt mode (HAL Driver).
+Data buffer transmission/reception between 
+two boards via SPI using Polling (LL driver) and Interrupt modes (HAL driver).
 
    _________________________                       __________________________
   |       ______ CN10 ______|                      |______ CN10 ______       |

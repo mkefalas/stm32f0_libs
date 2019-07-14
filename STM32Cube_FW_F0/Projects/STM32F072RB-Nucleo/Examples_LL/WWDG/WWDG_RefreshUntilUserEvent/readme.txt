@@ -35,9 +35,9 @@
 
 @par Example Description
 
-This example describes how to configure WWDG and update counter at regular period 
-and generating an MCU WWDG reset at User Button pressed. Peripheral initialization 
-done using LL unitary services functions for optimization purpose (performance and size).
+Configuration of the WWDG to periodically update the counter and 
+generate an MCU WWDG reset when a user button is pressed. The peripheral initialization 
+uses the LL unitary service functions for optimization purposes (performance and size).
 
 Example Configuration:
 Configure the WWDG (Window, Prescaler & Counter) and enable it.

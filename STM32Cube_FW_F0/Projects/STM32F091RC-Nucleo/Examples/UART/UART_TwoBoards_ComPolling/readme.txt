@@ -35,7 +35,7 @@
 
 @par Example Description 
 
-This example describes an UART transmission (transmit/receive) in polling mode
+UART transmission (transmit/receive) in Polling mode 
 between two boards.
 
 Board: STM32F091RC-Nucleo RevC (embeds a STM32F091RCT6 device)

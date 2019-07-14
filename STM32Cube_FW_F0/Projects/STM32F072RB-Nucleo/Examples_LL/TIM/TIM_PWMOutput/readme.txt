@@ -35,11 +35,10 @@
 
 @par Example Description
 
-This example describes how to use a timer peripheral to generate a 
-PWM output signal and update PWM duty cycle; 
-Example using the STM32F0xx TIM LL API, 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+Use of a timer peripheral to generate a 
+PWM output signal and update the PWM duty cycle. This example is based on the 
+STM32F0xx TIM LL API. The peripheral initialization uses 
+LL unitary service functions for optimization purposes (performance and size).
 
 In this example TIM2 input clock TIM2CLK is set to APB1 clock (PCLK1),
 since APB1 pre-scaler is equal to 1.

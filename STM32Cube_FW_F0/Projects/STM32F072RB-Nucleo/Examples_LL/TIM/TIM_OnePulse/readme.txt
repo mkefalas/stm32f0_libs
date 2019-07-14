@@ -35,10 +35,10 @@
 
 @par Example Description
 
-This example shows how to configure a timer to generate a positive pulse in
-Output Compare mode with a length of tPULSE and after a delay of tDELAY;
-This example is based on the STM32F0xx TIM LL API; peripheral initialization is done
-using LL unitary services functions for optimization purpose (performance and size).
+Configuration of a timer to generate a positive pulse in 
+Output Compare mode with a length of tPULSE and after a delay of tDELAY. This example 
+is based on the STM32F0xx TIM LL API. The peripheral initialization uses 
+LL unitary service functions for optimization purposes (performance and size).
 
 The pulse is generated on OC1.
 

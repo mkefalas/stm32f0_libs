@@ -35,8 +35,7 @@
 
 @par Example Description 
 
-This example guides you through the different configuration steps by mean of HAL API
-to ensure Calendar configuration using the RTC peripheral.
+Configuration of the calendar using the RTC HAL API.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

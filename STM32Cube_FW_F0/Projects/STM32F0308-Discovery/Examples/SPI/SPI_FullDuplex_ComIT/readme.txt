@@ -35,8 +35,7 @@
 
 @par Example Description 
 
-This example shows how to ensure SPI data buffer transmission/reception between 
-two boards by using an interrupt.
+Data buffer transmission/reception between two boards via SPI using Interrupt mode.
 
    _________________________                        _________________________
   |       ______ CN10 ______|                      |______ CN10 ______       |

@@ -37,9 +37,8 @@
 
 @par Example Description 
 
-This example provides a short description of how to use the ADC peripheral to
-perform conversions with analog watchdog and out-of-window interruptions enabled.
-
+How to use the ADC peripheral to perform conversions with an analog watchdog 
+and out-of-window interrupts enabled.
 
 One compilation switch is available to select ADC configuration continuous mode
 and external trigger (located in main.h):

@@ -35,9 +35,8 @@
 
 @par Example Description 
 
-This example shows how to modify Cortex-M0 Thread mode stack.
-Cortex-M0 Thread mode is entered on Reset, and can be entered as a result of an
-exception return.  
+How to modify the Thread mode stack. Thread mode is entered on reset, and can be
+entered as a result of an exception return.  
 
 The associated program is used to:
 

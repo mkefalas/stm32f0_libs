@@ -34,11 +34,12 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use a ADC peripheral to convert several channels, 
-ADC conversions are performed successively in a scan sequence; 
-This example is based on the STM32F0xx ADC LL API; 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+
+How to use an ADC peripheral to convert several channels. ADC conversions are 
+performed successively in a scan sequence.
+This example is based on the STM32F0xx ADC LL API.
+The peripheral initialization is done using LL unitary service functions 
+for optimization purposes (performance and size).
 
 Example configuration:
 ADC is configured in single conversion mode, from SW trigger.

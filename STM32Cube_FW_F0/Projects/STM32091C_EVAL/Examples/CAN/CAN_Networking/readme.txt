@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example shows how to configure the CAN peripheral to send and receive 
-CAN frames in normal mode. 
+How to configure the CAN peripheral to send and receive CAN frames in 
+normal mode. 
 
 The sent frames are used to control LEDs by pressing Tamper push-button.
 	

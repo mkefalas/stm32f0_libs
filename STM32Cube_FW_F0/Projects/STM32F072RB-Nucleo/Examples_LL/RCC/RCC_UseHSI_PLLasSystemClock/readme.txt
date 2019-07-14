@@ -35,7 +35,7 @@
 
 @par Example Description
 
-This example shows how to modify the PLL parameters in run time.
+Modification of the PLL parameters in run time.
 
 In this example, the toggling frequency of the green LED depends on the system clock 
 frequency and, each time the user-button is pressed, the PLL switches between two configurations.

@@ -35,14 +35,14 @@
 
 @par Example Description 
 
-This example provides a description of how to use CRC peripheral through 
-the STM32F0xx CRC HAL & LL API (LL API used for performance improvement);
-The CRC (Cyclic Redundancy Check) calculation unit computes a 8-bit long 
-CRC code of a given buffer of 32-bit data words, based on a user-defined generating polynomial; 
-In this example, the polynomial is first set manually to 0x9B that is X^8 + X^7 + X^4 + X^3 + X + 1;
-Then, in a second step, generating polynomial value and length are updated (set to 0x1021 that is
-X^16 + X^12 + X^5 + 1), for new CRC calculation;
-These updates are performed using CRC LL API.
+How to use the CRC peripheral through the STM32F0xx CRC HAL and LL API.
+The LL API is used for performance improvement. The CRC calculation unit
+computes the 8-bit CRC code of a given buffer of 32-bit data words, based on
+a user-defined generating polynomial. In this example, the polynomial is first
+set manually to 0x9B (X^8 + X^7 + X^4 + X^3 + X + 1).
+In a second step, the generating polynomial value and length are updated and
+set to 0x1021  (X^16 + X^12 + X^5 + 1) for a new CRC calculation.
+These updates are performed using the CRC LL API.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

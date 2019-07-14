@@ -36,8 +36,8 @@
 
 @par Example Description 
 
-This example describes how to perform I2C data buffer transmission/reception 
-between two boards, using an interrupt.
+How to handle I2C data buffer transmission/reception between two boards, 
+using an interrupt.
 
 Board: STM32F070RB-Nucleo RevC (embeds a STM32F070RBT6 device)
 SCL Pin: PB6 (CN10, pin17)

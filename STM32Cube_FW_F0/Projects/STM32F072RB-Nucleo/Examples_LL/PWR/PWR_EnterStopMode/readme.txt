@@ -35,7 +35,7 @@
 
 @par Example Description
 
-This example shows how to enter the system in STOP_LPREGU mode.
+How to enter the system in STOP_LPREGU mode.
 
 After start-up LED2 is toggling during 5 seconds, then the system automatically 
 enter in STOP_LPREGU mode (Final state).

@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example shows how to periodically update the IWDG reload counter and
-simulate a reload outside the window that generates an MCU IWDG reset.
+How to periodically update the IWDG reload counter and simulate a software fault that generates 
+an MCU IWDG reset after a preset laps of time.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

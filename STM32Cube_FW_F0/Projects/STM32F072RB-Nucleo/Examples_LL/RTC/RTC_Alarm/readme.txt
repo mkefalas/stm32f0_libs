@@ -35,9 +35,8 @@
 
 @par Example Description
 
-This example guides you through the different configuration steps by mean of LL API 
-to ensure Alarm configuration and generation using the RTC peripheral. Peripheral initialization
-done using LL unitary services functions for optimization purpose (performance and size).
+Configuration of the RTC LL API to configure and generate an alarm using the RTC peripheral. The peripheral initialization 
+uses LL unitary service functions for optimization purposes (performance and size).
 
 In this example, after start-up, SYSCLK is configured to the max frequency using the PLL with
 HSI48 as clock source.

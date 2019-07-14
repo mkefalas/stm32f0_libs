@@ -407,6 +407,9 @@ extern void     hx8347d_SetCursor(uint16_t Xpos, uint16_t Ypos);
   
   /* Write 16-bit GRAM Reg */
   LCD_IO_WriteMultipleData(kstorage_tmpbuffer, width*bit_pixel);
+  
+  /* Workaround to avoid SD-LCD conflicts seen on Netac SD */ 
+  SD_IO_WriteByte(0xFF);
 #endif
     
     xpos--;

@@ -34,13 +34,12 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use a ADC peripheral to perform 
-a single ADC conversion of a channel, at each software start; 
-Example using programming model: interrupt 
-(for programming models polling or DMA transfer, refer to
-other examples); 
-This example is based on the STM32F0xx ADC HAL & LL API
-(LL API used for performance improvement).
+
+How to use the ADC to perform a single ADC channel conversion at each 
+software start. This example uses the interrupt programming model (for 
+polling and DMA programming models, please refer to other examples). It is 
+based on the STM32F0xx ADC HAL and LL API. The LL API is used 
+for performance improvement.
 
 Example configuration:
 ADC is configured to convert a single channel, in single conversion mode,

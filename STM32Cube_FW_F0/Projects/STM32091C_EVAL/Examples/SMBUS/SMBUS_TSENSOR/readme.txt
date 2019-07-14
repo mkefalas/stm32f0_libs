@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example shows how to ensure SMBUS Data buffer transmission and reception with 
-IT. The communication is done with a SMBUS temperature sensor.
+MBUS data buffer transmission/reception using an interrupt. The STM32 microcontroller communicates with an SMBUS temperature sensor.
+
    __________________________________________________________________________                        
   |           ______________                        ______________           |
   |          | I2C1         |                      |   TSENSOR    |          |

@@ -35,7 +35,7 @@
 
 @par Example Description
 
-This example describes how to configure MCO pin (PA8) to output the system clock. 
+Configuration of MCO pin (PA8) to output the system clock.
 
 At start-up, USER button and MCO pin are configured. The program configures SYSCLK
 to the max frequency using the PLL with HSI48 as clock source.

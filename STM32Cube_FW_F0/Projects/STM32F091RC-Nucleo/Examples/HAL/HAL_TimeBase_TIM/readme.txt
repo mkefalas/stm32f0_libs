@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example describes how to customize the HAL time base using a general 
-purpose timer instead of Systick as main source of time base.
+How to customize HAL using a general-purpose timer as main source of time base 
+instead of Systick.
 
 In this example the used timer is TIM6.
 

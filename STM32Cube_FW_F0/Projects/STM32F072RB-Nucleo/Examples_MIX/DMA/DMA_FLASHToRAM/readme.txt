@@ -34,9 +34,10 @@
   @endverbatim
 
 @par Example Description 
-This example provides a description of how to use a DMA to transfer 
-a word data buffer from Flash memory to embedded SRAM through 
-the STM32F0xx DMA HAL & LL API (LL API used for performance improvement).
+
+How to use a DMA to transfer a word data buffer from Flash memory to embedded
+SRAM through the STM32F0xx DMA HAL and LL API. The LL API is used for 
+performance improvement.
 
 At the beginning of the main program the HAL_Init() function is called to reset 
 all the peripherals, initialize the Flash interface and the systick.

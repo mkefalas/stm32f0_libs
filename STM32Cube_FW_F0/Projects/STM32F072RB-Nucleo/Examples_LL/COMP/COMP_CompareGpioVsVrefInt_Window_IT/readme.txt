@@ -34,14 +34,12 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use a pair of comparator peripherals
-to compare a voltage level applied on a GPIO pin
-versus 2 thresholds: the internal voltage reference (VrefInt)
-and a fraction the internal voltage reference (VrefInt/2),
-in interrupt mode;
-This example is based on the STM32F0xx COMP LL API; 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+
+How to use a pair of comparator peripherals to compare a voltage level applied on
+a GPIO pin to two thresholds: the internal voltage reference (VREFINT) and a fraction
+of the internal voltage reference (VREFINT/2), in interrupt mode. This example is
+based on the STM32F0xx COMP LL API. The peripheral initialization
+uses LL unitary service functions for optimization purposes (performance and size).
 
 Example configuration:
 Comparator instances COMP1 and COMP2 are configured to work together

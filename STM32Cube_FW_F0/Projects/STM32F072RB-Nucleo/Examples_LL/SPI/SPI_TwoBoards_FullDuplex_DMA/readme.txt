@@ -35,10 +35,9 @@
 
 @par Example Description 
 
-This example shows how to ensure SPI data buffer transmission and reception in
-DMA mode. The example is based on the STM32F0xx SPI LL API. Peripheral initialization
-is done using LL unitary services functions for optimization purpose
-(performance and size).
+Data buffer transmission and reception via SPI using DMA mode. This example is 
+based on the STM32F0xx SPI LL API. The peripheral initialization uses 
+LL unitary service functions for optimization purposes (performance and size).
 
 The communication is done with 2 boards through SPI.
    _________________________                        _________________________

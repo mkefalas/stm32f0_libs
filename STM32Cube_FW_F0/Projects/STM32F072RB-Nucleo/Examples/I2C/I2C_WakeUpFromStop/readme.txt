@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example describes how to perform I2C data buffer transmission/reception between 
-two boards using an interrupt when the device is in STOP mode.
+How to handle I2C data buffer transmission/reception between two boards, 
+using an interrupt when the device is in Stop mode.
 
    _________________________                        _________________________
   |           ______________|                      |______________           |

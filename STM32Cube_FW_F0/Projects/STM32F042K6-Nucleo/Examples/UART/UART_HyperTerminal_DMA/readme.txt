@@ -35,7 +35,7 @@
 
 @par Example Description 
 
-This example describes an UART transmission (transmit/receive) in DMA mode
+UART transmission (transmit/receive) in DMA mode
 between a board and an HyperTerminal PC application.
 
 Board: STM32F042K6-Nucleo(revC)

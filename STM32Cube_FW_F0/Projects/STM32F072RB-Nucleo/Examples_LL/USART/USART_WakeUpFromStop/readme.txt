@@ -35,10 +35,9 @@
 
 @par Example Description
   
-This example shows how to configure GPIO and USART peripherals
-for allowing characters received on USART RX pin, to wake Up MCU from low power mode,
-using STM32F0xx USART LL API. Peripheral initialization done 
-using LL unitary services functions for optimization purpose (performance and size).
+Configuration of GPIO and USART peripherals to allow the characters received on USART RX pin to wake up the MCU from low-power mode. 
+This example is based on the STM32F0xx USART LL API. The peripheral 
+initialization uses LL unitary service functions for optimization purposes (performance and size).
 
 USART Peripheral is configured in asynchronous mode (9600 bauds, 8 data bit, 1 start bit, 1 stop bit, no parity).
 No HW flow control is used.

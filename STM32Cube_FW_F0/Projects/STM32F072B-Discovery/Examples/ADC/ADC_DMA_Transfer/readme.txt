@@ -35,11 +35,10 @@
 
 @par Example Description 
 
-This example describes how to configure and use the ADC to convert an external
-analog input and get the result using a DMA transfer through the HAL API.
+How to configure and use the ADC to convert an external analog input and get 
+the result using a DMA transfer through the HAL API.
 
-The ADC is configured to convert continuously ADC_CHANNEL_0, resolution is set to 12
-bits right aligned, conversion is software-triggered.
+The ADC is configured to continuously convert ADC_CHANNEL_0, resolution is set to 12 bits right aligned, conversion is software-triggered..
 
 DMA1_Channel1 is configured in Circular mode to transfer continuously
 the content of ADC_DR (Data Register) to "aADCxConvertedData" variable which 

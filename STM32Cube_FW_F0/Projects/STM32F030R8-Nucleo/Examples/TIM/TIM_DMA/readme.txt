@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-This example provides a description of how to use DMA with TIMER Update request
-to transfer Data from memory to TIMER Capture Compare Register 3 (TIMx_CCR3).
+Use of the DMA with TIMER Update request 
+to transfer data from memory to TIMER Capture Compare Register 3 (TIMx_CCR3).
 
   The following configuration values are used in this example:
 

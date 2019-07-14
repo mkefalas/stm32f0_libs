@@ -36,8 +36,8 @@
 
 @par Example Description 
 
-This example provides a short description of how to use the ADC peripheral to
-perform conversions with ADC low power modes: auto-wait and auto-power off.
+How to use the ADC peripheral to perform conversions with ADC low-power modes: 
+auto-wait and auto-power off.
 
 Other peripherals related to ADC are used:
 Mandatory:

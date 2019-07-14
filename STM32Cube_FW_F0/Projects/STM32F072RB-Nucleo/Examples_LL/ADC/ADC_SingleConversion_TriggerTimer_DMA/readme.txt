@@ -34,13 +34,13 @@
   @endverbatim
 
 @par Example Description
-This example describes how to use a ADC peripheral to perform 
-a single ADC conversion of a channel, at each trigger event from timer; 
-Conversion data are transferred by DMA into a table,
-indefinitely (circular mode); 
-This example is based on the STM32F0xx ADC LL API; 
-peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+
+How to use an ADC peripheral to perform a single ADC conversion on a channel 
+at each trigger event from a timer. Converted data is indefinitely transferred 
+by DMA into a table (circular mode).
+This example is based on the STM32F0xx ADC LL API.
+The peripheral initialization is done using LL unitary service functions 
+for optimization purposes (performance and size).
 
 Example configuration:
 ADC is configured to convert a single channel, in single conversion mode,

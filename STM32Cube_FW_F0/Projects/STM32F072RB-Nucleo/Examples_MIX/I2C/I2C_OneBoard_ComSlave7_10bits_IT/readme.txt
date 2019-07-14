@@ -37,9 +37,10 @@
 
 @par Example Description 
 
-This example describes how to perform I2C data buffer transmission/reception 
-between master and 2 slaves with different Address size (7-bit or 10-bit) through
-the STM32F0xx HAL & LL API (LL API used for performance improvement), using an interrupt.
+How to perform I2C data buffer transmission/reception between 
+one master and two slaves with different Address size (7-bit or 10-bit). This example
+uses the STM32F0xx HAL & LL API (LL API used for performance improvement)
+and an interrupt.
 
 Board: STM32F072RB-Nucleo RevC (embeds a STM32F072RBT6 device)
 SCL MASTER Pin: PB.13 (CN10, pin 30)

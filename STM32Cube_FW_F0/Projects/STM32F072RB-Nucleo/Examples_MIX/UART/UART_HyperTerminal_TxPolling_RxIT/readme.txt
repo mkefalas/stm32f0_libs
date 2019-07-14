@@ -35,10 +35,10 @@
 
 @par Example Description 
 
-This example describes how to use an UART to transmit data (transmit/receive)
-between a board and an HyperTerminal PC application both in Polling and Interrupt modes;
-This example provides a description of how to use USART peripheral through 
-the STM32F0xx UART HAL & LL API (LL API used for performance improvement).
+Use of a UART to transmit data (transmit/receive) 
+between a board and an HyperTerminal PC application both in Polling and Interrupt 
+modes. This example describes how to use the USART peripheral through 
+the STM32F0xx UART HAL and LL API, the LL API being used for performance improvement.
 
 Board: STM32F072RB-Nucleo RevC
 Tx Pin: PA.02

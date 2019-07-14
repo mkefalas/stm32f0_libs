@@ -35,11 +35,12 @@
 
 @par Example Description
 
-This example shows how to configure and use CRC calculation unit to get a 8-bit long CRC of a given data buffer,
-based on a user-defined generating polynomial. Peripheral initialization done using LL unitary services functions
-for optimization purpose (performance and size).
+How to configure and use the CRC calculation unit to compute an 8-bit CRC code
+for a given data buffer, based on a user-defined generating polynomial. The
+peripheral initialization is done using LL unitary service functions for
+optimization purposes (performance and size).
 
-CRC Peripheral is configured to work with a user defined polynomial value (8-bit long value).
+The CRC peripheral is configured to work with a user defined polynomial value (8-bit long value).
 In this example, the polynomial is set manually to 0x9B that is X^8 + X^7 + X^4 + X^3 + X + 1.
 Generated CRC value is then 8-bit long.
 

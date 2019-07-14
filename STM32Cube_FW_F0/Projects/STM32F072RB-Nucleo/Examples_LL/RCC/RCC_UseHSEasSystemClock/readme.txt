@@ -34,8 +34,8 @@
   @endverbatim
 
 @par Example Description 
-This example describes how to use the RCC LL API how to start the HSE 
-and use it as system clock.
+
+Use of the RCC LL API to start the HSE and use it as system clock.
 
 At start-up, HSI clock is used as system clock (default clock after reset) and then Systick is 
 configured at 1 ms using HSI_VALUE define.

@@ -35,9 +35,10 @@
 
 @par Example Description
 
-This example describes how to configure the IWDG and insure counter update at 
-regular period and generating an MCU IWDG reset at User Button pressed. Peripheral 
-initialization done using LL unitary services functions for optimization purpose (performance and size).
+How to configure the IWDG peripheral to ensure periodical counter update and 
+generate an MCU IWDG reset when a user button is pressed. The peripheral 
+is initialized with LL unitary service functions to optimize 
+for performance and size.
 
 Example Configuration:
 Configure the IWDG (prescaler, counter) and enable it.

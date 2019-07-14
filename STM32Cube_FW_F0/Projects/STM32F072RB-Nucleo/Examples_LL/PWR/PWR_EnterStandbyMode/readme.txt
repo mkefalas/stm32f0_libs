@@ -35,8 +35,8 @@
 
 @par Example Description
 
-This example shows how to enter the system in STANDBY mode and wake-up from this
-mode using external RESET or wake-up interrupt.
+How to enter the Standby mode and wake up from this mode by using an external 
+reset or a wakeup interrupt.
 
 In the associated software, the system clock is set to 48 MHz, an EXTI line
 is connected to the user button thru PC.13 and configured to generate an 

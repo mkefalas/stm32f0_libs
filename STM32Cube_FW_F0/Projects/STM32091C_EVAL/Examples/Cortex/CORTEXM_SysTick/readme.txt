@@ -35,8 +35,8 @@
 
 @par Example Description 
 
-  This example shows how to use the default configuration of SysTick with a time 
-  base equal to 1 ms in order to insert a delay between LEDs toggling. 
+How to use the default SysTick configuration with a 1 ms timebase to toggle LEDs.
+ 
   The system clock is set to 48 MHz for STM32F0xx devices, the SysTick is 
   clocked by the AHB clock(HCLK).
 
