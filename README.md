@@ -10,9 +10,14 @@ maps to a directory named STM32Cube_FW_F0_Vx.y.z
 
 For example, label F0_V1.9.0 goes to STM32Cube_FW_F0_V1.9.0
 
-
-The root directory of the repo can map to ...[STM32Cube]/Repository/
+The root directory of this repo can map to ...[STM32Cube]/Repository/
 so the complete path to the version would be 
    ...[STM32Cube]/Repository/STM32Cube_FW_F0_V1.9.0
 
-*Patches* go into STM32Cube_FW_F0/patches directory, and are applied relative to STM32Cube_FW_F0 .
+The STM32Cube_FW_F0/ subdirectory corresponds to the root of the official repo:
+https://github.com/STMicroelectronics/STM32CubeF0   
+   
+*Patches* go into patches/ directory, and are applied relative to STM32Cube_FW_F0 .
+
+Tags vs. branches: support branches can be later opened at the tagged releases, as needed.
+NOTE: Tag names are different in the ST repo.  
